@@ -1,3 +1,4 @@
+var apiKey = require('./../.env').apiKey;
 var GitHubUser = require('./../js/githubAPI.js').GitHubUser;
 
 $(document).ready(function(){
@@ -9,19 +10,18 @@ $(document).ready(function(){
     var username = $('#userInput').val();
     $('#userInput').val("");
 
-    var functionCurrentUser = function(response) {
+    var getCurrentUser = function(response) {
       $('.showUserName').text("Your requested GitHub user is: " + username);
     };
 
-    // var functionCurrentUserRepos = function(response) {
-    //   $('.showRepoNamesDescriptions').empty();
-    //   $('.showRepoNamesDescriptions').append("The public GitHub repositories for " + username + "are: ");
-    //   for (var i = 0; i < userRepos.length; i++) {
-    //     $('.showRepoNamesDescriptions').append("<li>" + "GitHub Repository Name: " + )
-    //   }
-    // };
+    var getCurrentUserRepos = function(response) {
+      $('.showRepoNamesDescriptions').empty();
+      $('.showRepoNamesDescriptions').append("The public GitHub repositories for " + username + " are: ");
 
-    requestedGitUserName.getUserName(username, functionCurrentUser);
-    // requestedGitUserName.getUserRepos(username, functionCurrentUserRepos);
+      $('.showRepoNamesDescriptions').append("<li>" + "GitHub Repository Name: " + response[0].name + "</li>");
+    };
+
+    requestedGitUserName.getUserName(username, getCurrentUser);
+    requestedGitUserName.getUserRepos(username, getCurrentUserRepos);
   });
 });
