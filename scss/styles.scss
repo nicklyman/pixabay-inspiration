@@ -1,11 +1,11 @@
 $black : black;
+$gray: gray;
 
 body {
   font-family: monospace;
   color: black;
-  background-image: url("../../scss/img01.jpg");
-  background-position: top;
-  background-repeat: no-repeat;
+  background-color: gray;
+
   .container {
     button {
       color: black;
@@ -19,6 +19,7 @@ body {
     #enteredUserName {
       text-align: center;
       font-size: 24px;
+      padding-bottom: 10px;
     }
   }
 }
@@ -30,4 +31,12 @@ body {
 #results {
   font-family: monospace;
   font-size: 24px;
+}
+
+li {
+  padding-bottom: 10px;
+}
+
+ol {
+  margin: 15px;
 }
