@@ -1,0 +1,25 @@
+$green: #32d019;
+$brightblue: #33ccff;
+
+body {
+  text-align: center;
+  font-family: monospace;
+  background-image: url("../../scss/img01.jpg");
+  background-position: top;
+  background-repeat: no-repeat;
+  .container {
+    h1 {
+      font-family: serif;
+      font-weight: bold;
+      color: $brightblue;
+    }
+    button {
+      background-color: $green;
+      font-weight: bold;
+      font-size: 16px;
+    }
+    #printInput {
+      font-size: 32px;
+    }
+  }
+}
