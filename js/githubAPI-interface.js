@@ -16,7 +16,9 @@ $(document).ready(function(){
     var getCurrentUserRepos = function(response) {
       $('.showRepoNamesDescriptions').empty();
       $('.showRepoNamesDescriptions').append("The public GitHub repositories for " + response[0].owner.login + " are: ");
-      $('.showRepoNamesDescriptions').append("<li>" + "GitHub Repository Name: " + response[0].name + " Description: " + response[0].description + "</li>");
+      for (var i = 0; i < response.length; i++) {
+        $('.showRepoNamesDescriptions').append("<li>" + "Name: " + response[i].name + "<br>" + " Description: " + response[i].description + "</li>");
+      }
     };
 
     requestedGitUserName.getUserName(username, getCurrentUser);
