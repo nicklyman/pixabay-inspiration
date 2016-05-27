@@ -10,7 +10,7 @@ This web application allows a user to enter a GitHub user's username into a form
 
 ## Setup/Installation Requirements
 
-* Link to repository: https://github.com/nicklyman/0527_JS_GitHubAPI.git
+* Link to repository: https://github.com/nicklyman/0527_JS_GitHubAPI_fix.git
 * Clone or download this repository to your Github account
 * Create a project directory on your computer
 * Have Node.js installed on your computer
