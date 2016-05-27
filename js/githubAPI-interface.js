@@ -9,10 +9,6 @@ $(document).ready(function(){
     var username = $('#userInput').val();
     $('#userInput').val("");
 
-    var getCurrentUser = function(response) {
-      $('.showUserName').text("Your requested GitHub user is: " + response[0].owner.login);
-    };
-
     var getCurrentUserRepos = function(response) {
       $('.showRepoNamesDescriptions').empty();
       $('.showRepoNamesDescriptions').append("The public GitHub repositories for " + response[0].owner.login + " are: ");
@@ -21,7 +17,6 @@ $(document).ready(function(){
       }
     };
 
-    requestedGitUserName.getUserName(username, getCurrentUser);
     requestedGitUserName.getUserRepos(username, getCurrentUserRepos);
   });
 });

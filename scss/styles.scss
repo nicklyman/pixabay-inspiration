@@ -1,20 +1,33 @@
+$black : black;
+
 body {
   font-family: monospace;
+  color: black;
   background-image: url("../../scss/img01.jpg");
   background-position: top;
   background-repeat: no-repeat;
   .container {
-    h1 {
-      text-align: center;
-      font-weight: bold;
-    }
     button {
+      color: black;
       text-align: center;
       font-weight: bold;
-      font-size: 16px;
+      font-size: 24px;
     }
-    #printInput {
-      font-size: 32px;
+    label {
+      font-size: 24px;
+    }
+    #enteredUserName {
+      text-align: center;
+      font-size: 24px;
     }
   }
+}
+
+.jumbotron {
+  text-align: center;
+}
+
+#results {
+  font-family: monospace;
+  font-size: 24px;
 }

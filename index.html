@@ -8,15 +8,18 @@
     <title>GitHub Repository User Search</title>
   </head>
   <body>
+    <div class="jumbotron">
+      <h1>Find GitHub Repositories By User Name</h1>
+    </div>
     <div class="container">
-      <h1>Find GitHub Repos!!!</h1>
       <form id="enteredUserName">
         <label for="userInput">User Name: </label>
         <input type="text" id="userInput">
-        <button class="btn btn-danger" type="submit" name="button">Find Repos!</button>
+        <button class="btn btn-danger" type="submit" name="button">Find Repositories!</button>
       </form>
-      <div class="showUserName"></div>
-      <ol class="showRepoNamesDescriptions"></ol>
     </div>
+    <div class="container" id="results">
+      <div class="showUserName"></div>
+      <ol class="showRepoNamesDescriptions"></ol>    </div>
   </body>
 </html>
