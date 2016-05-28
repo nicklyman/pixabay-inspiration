@@ -11,7 +11,7 @@ $(document).ready(function(){
 
     var getCurrentUserRepos = function(response) {
       $('.showRepoNamesDescriptions').empty();
-      $('.showRepoNamesDescriptions').append("The public GitHub repositories for " + response[0].owner.login + " are: ");
+      $('#intro').text('The public GitHub repositories for ' + response[0].owner.login + ' are: ');
       for (var i = 0; i < response.length; i++) {
         $('.showRepoNamesDescriptions').append("<li>" + "Name: " + response[i].name + "<br>" + " Description: " + response[i].description + "</li>");
       }
