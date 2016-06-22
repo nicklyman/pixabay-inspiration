@@ -16,32 +16,13 @@ body {
     label {
       font-size: 24px;
     }
-    #enteredUserName {
-      text-align: center;
-      font-size: 24px;
-      padding-bottom: 10px;
-    }
   }
 }
 
-.jumbotron {
+.title {
   text-align: center;
 }
 
-#results {
-  font-family: monospace;
-  font-size: 24px;
-}
-
-li {
-  padding-bottom: 10px;
-}
-
-ol {
-  margin: 15px;
-}
-
-#intro {
+.photos {
   text-align: center;
-  font-weight: bold;
 }
