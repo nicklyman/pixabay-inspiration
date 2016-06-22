@@ -44,4 +44,3 @@ build/
 node_modules/
 tmp/
 bower_components/
-.env
