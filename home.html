@@ -6,21 +6,21 @@
     <script   src="https://code.jquery.com/jquery-3.0.0.js"   integrity="sha256-jrPLZ+8vDxt2FnE1zvZXCkCcebI/C8Dt5xyaQBjxQIo="   crossorigin="anonymous"></script>
     <script>
 
-    function GetURLParameter(sParam){
-      var sPageURL = window.location.search.substring(1);
-      var sURLVariables = sPageURL.split('=');
-      var token = sURLVariables[1];
-      return token;
-    }
-
-    var token = GetURLParameter("code");
-    console.log(token);
-    userid = 1362124742, // User ID - get it in source HTML of your Instagram profile or look at the next example :)
-    num_photos = 4;
-
-    $.get('https://api.instagram.com/v1/tags/nofilter/media/recent?access_token=ACCESS_TOKEN').then(function(response){
-      console.log(response);
-    });
+    // function GetURLParameter(sParam){
+    //   var sPageURL = window.location.search.substring(1);
+    //   var sURLVariables = sPageURL.split('=');
+    //   var token = sURLVariables[1];
+    //   return token;
+    // }
+    //
+    // var token = GetURLParameter("code");
+    // console.log(token);
+    // userid = 1362124742, // User ID - get it in source HTML of your Instagram profile or look at the next example :)
+    // num_photos = 4;
+    //
+    // $.get('https://api.instagram.com/v1/tags/nofilter/media/recent?access_token=ACCESS_TOKEN').then(function(response){
+    //   console.log(response);
+    // });
 
     // $.ajax({
     //   url: 'https://api.instagram.com/v1/users/' + userid + '/media/recent', // or /users/self/media/recent for Sandbox
