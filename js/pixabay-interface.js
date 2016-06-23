@@ -11,6 +11,5 @@ $(document).ready(function(){
         }).fail(function(error){
         console.log(error.responseJSON.message);
       });
-      // $('#input').val('');
     });
   });
