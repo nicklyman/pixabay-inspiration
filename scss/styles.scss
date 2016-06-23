@@ -25,15 +25,12 @@ body {
     }
   }
 }
-
 .title, .about{
   text-align: center;
 }
-
 .photos {
   text-align: center;
 }
-
 .col-sm-3 {
   img {
     width: 270px;
@@ -43,7 +40,6 @@ body {
     background-color: white;
   }
 }
-
 .col-sm-4 {
   img {
     width: 370px;
@@ -53,7 +49,6 @@ body {
     background-color: white;
   }
 }
-
 .banner-img {
   img {
     display: block;
@@ -77,5 +72,7 @@ body {
 #picture-content img{
   width:300px;
   height:200px;
-
+}
+#picture-content {
+  padding: 20px;
 }
