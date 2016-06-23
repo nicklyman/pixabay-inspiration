@@ -1,9 +1,10 @@
 $(document).ready(function(){
-  $("#button").click(function(){
-    console.log("clicked");
-    var variable = "urban";
+  $("#user-input").click(function(){
+    variable = ($('#input').val());
+    var user_input = variable;
     var vidPreviewSize = "_200x150.jpg";
     var vidPrefix = "https://i.vimeocdn.com/video/"
+    $("#video-list").html('');
 
     $.get('https://pixabay.com/api/videos/?key=2801588-27810ab4dfe172ad8ddb203f5&q=' + variable).then(function(response){
         console.log(response.hits);
@@ -13,5 +14,6 @@ $(document).ready(function(){
         }).fail(function(error){
         console.log(error.responseJSON.message);
         });
+        $('#input').val('');
       });
     });

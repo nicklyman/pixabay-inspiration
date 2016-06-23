@@ -5,7 +5,7 @@
     <link rel="stylesheet" href="build/css/styles.css">
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
-    <script type="text/javascript" src="./../js/pixabay-interface.js"></script>
+
   </head>
   <body>
     <div class="container">
@@ -25,7 +25,12 @@
           <h1 class="about">
           About Us
           </h1>
-          <button id="button" class="btn btn-primary">new clicker</button>
+          <div class="form-group">
+            <label for="user-input">What Do You Want To See?</label>
+            <input type="text" id="input">
+            <button id="user-input" class="btn btn-primary btn-xs" type="submit">Go!</button>
+            <ul id="rudr_instafeed"></ul>
+          </div>
         </div>
       </div>
       <div id ="photos" class="row">
