@@ -10,7 +10,7 @@ A resource for developers to find image and video content to include in their ap
 
 ## Setup/Installation Requirements
 
-* Link to repository: https://github.com/nicklyman/trending_instagram.git
+* Link to repository: https://github.com/nicklyman/pixabay-inspiration.git
 * Clone or download this repository to your Github account
 * Create a project directory on your computer
 * Have Node.js installed on your computer
