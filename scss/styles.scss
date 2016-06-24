@@ -4,8 +4,9 @@ $gray: gray;
 body {
   font-family: monospace;
   color: black;
-  background-color: gray;
+  background-color: white;
   padding: 20px;
+
 
   .container {
     button {
@@ -52,7 +53,8 @@ body {
 .banner-img {
   img {
     display: block;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
     width: 80%;
   }
 }
@@ -75,4 +77,20 @@ body {
 }
 #picture-content, #video-content{
   padding: 20px;
+}
+.container{
+  background: url("/swirl_pattern.png");
+  padding-right: 0px;
+  padding-left: 0px;
+
+}
+#user-input .button{
+  position: center;
+}
+.header{
+  background-color: white;
+}
+#button-container{
+  align-content: center;
+  text-align: center;
 }
